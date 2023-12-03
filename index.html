@@ -97,7 +97,12 @@
     // processBooleans([1, 0, 0, 1, 0]) // should return ["Y", "N", "N", "Y", "N"]
     // ❗ Notes
     // 🧠 Using map, arrow function syntax, and the ternary, you can make this function a short one-liner
-    const processBooleans = () => {
+    const processBooleans = (bools) => {
+      let result = bools.map(bool => {
+        let yesNo = bool ? "Y" : "N";
+        return yesNo
+      })
+      return result
 
     }
 
