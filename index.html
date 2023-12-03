@@ -66,7 +66,11 @@
     // devGreet(false, false) // should return "Hey, I am a backend dev and I am sad"
     // ❗ Notes
     // 🧠 Use ternary expressions to construct the string.
-    const devGreet = () => {
+    const devGreet = (isFrontend, isHappy) => {
+      let devType = isFrontend ? 'frontend' : 'backend';
+      let mood = isHappy ? 'happy' : 'sad';
+
+      return `Hey, I am a ${devType} dev and I am ${mood}`
 
     }
 
