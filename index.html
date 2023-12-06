@@ -123,16 +123,16 @@
     // 🧠 We suggest using a for loop. Research how to loop backwards over an array, starting at the last element.
     // 🧠 Use a ternary in the return statement.
     const reverseString = (str) => {
-      let strArr = str.split("");
+      const strArr = str.split("");
       let reversed = [];
-      let palindrome = true;
+      let isPalindrome = true;
       for (let i = strArr.length - 1; i >= 0; i--) {
         if (strArr[i] !== strArr[strArr.length - i - 1]) {
-          palindrome = false;
+          isPalindrome = false;
         }
         reversed.push(strArr[i])
       }
-      return palindrome ? "It's a palindrome!" : reversed.join("")
+      return isPalindrome ? "It's a palindrome!" : reversed.join("")
     }
 
     // 👉 CHALLENGE 7
